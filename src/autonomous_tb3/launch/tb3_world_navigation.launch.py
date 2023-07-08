@@ -1,3 +1,5 @@
+# navigation.launch.py 내용 복사
+
 from launch import LaunchDescription
 from launch_ros.actions import Node
 import os
