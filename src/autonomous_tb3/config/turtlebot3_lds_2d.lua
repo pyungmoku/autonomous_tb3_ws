@@ -42,6 +42,9 @@ options = {
   fixed_frame_pose_sampling_ratio = 1.,
   imu_sampling_ratio = 1.,
   landmarks_sampling_ratio = 1.,
+
+  -- submap_slices = 3,
+  -- last_frame_id = "your_last_frame_id",
 }
 
 MAP_BUILDER.use_trajectory_builder_2d = true
