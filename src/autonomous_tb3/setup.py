@@ -28,6 +28,7 @@ setup(
             # 'spawn_entity = autonomous_tb3.spawn_entity:main',
             'sdf_spawner = autonomous_tb3.spawn_entity:main',
             'maze_solver = autonomous_tb3.maze_solver:main',
+            'move_commander = autonomous_tb3.move_commander:main',
         ],
     },
 )

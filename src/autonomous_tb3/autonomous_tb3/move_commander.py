@@ -31,9 +31,11 @@ def movebase_client():
 
     # Define a list of goal coordinates
     goal_coordinates = [
-        (2.0, 0.0, 0.0),  # x, y, theta for Goal 1
-        (1.0, -3.0, 0.0),  # x, y, theta for Goal 2
-        (1.0, 0.1, 0.5),  # x, y, theta for Goal 3
+        (8.0, -2.0, 0.0),  # x, y, theta for Goal 1
+
+        # (2.0, 0.0, 0.0),  # x, y, theta for Goal 1
+        # (1.0, -3.0, 0.0),  # x, y, theta for Goal 2
+        # (1.0, 0.1, 0.5),  # x, y, theta for Goal 3
     ]
 
     # Loop over the goal coordinates and send goals one by one
@@ -74,5 +76,8 @@ def movebase_client():
     node.destroy_node()
     rclpy.shutdown()
 
-if __name__ == '__main__':
+def main(args=None):
     movebase_client()
+
+if __name__ == '__main__':
+    main()
