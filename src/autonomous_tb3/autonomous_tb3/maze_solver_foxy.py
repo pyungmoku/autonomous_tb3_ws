@@ -55,9 +55,9 @@ def main(argv=sys.argv[1:]):
 
         # 멀티 성공 케이스 1
         (-1.0, -2.0, pi),  # x, y, theta for Goal 1
-        (-7.6, -0.9, -pi/2.0),  # x, y, theta for Goal 1
+        (-7.6, -0.9, pi/2.0),  # x, y, theta for Goal 1
         (-7.19, 7.67, 0.0),
-        (-0.29, 5.78, pi/2.0),
+        (-0.29, 5.78, -pi/2.0),
         (8.0, -2.0, 0.0),   # x, y, theta for Goal 2
 
     ]
