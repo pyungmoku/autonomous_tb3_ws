@@ -56,7 +56,7 @@ def generate_launch_description():
             'x_pose': x_pose,
             'y_pose': y_pose
         }.items()
-)
+    )
 
     # spawn_turtlebot_cmd = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource([launch_nav2_bringup_dir, '/spawn_tb3_launch.py']),
@@ -112,7 +112,12 @@ def generate_launch_description():
         #     ('/tf', 'tf'),
         #     ('/tf_static', 'tf_static')
         # ],
+    )
 
+    maze_solver_node = Node(
+        package='autonomous_tb3',
+        executable='maze_solver_foxy',
+        output='screen',
     )
 
     ld = LaunchDescription()
@@ -126,5 +131,6 @@ def generate_launch_description():
     # ld.add_action(maze_mapping)
     ld.add_action(maze_nav)
     ld.add_action(rviz)
+    ld.add_action(maze_solver_node)
 
     return ld
